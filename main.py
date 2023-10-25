@@ -18,8 +18,16 @@ def decode(decode_str):                             # decodes password
     return password_str
 
 
-def encode():                                       # encodes function
-    pass
+def encode(password):
+    encoded_pass = ""
+    for digit in password:
+        if int(digit) >= 7:
+            number = str(int(digit) + 3)
+            encoded_pass += number[1]
+        else:
+            encoded_pass += str(int(digit) + 3)
+
+    return encoded_pass
 
 
 def main():
