@@ -1,5 +1,6 @@
 encode_loop = True
 
+
 def decode(decode_str):                             # decodes password
     password_str = ''
     for i in decode_str:
@@ -41,7 +42,5 @@ def main():
             break
 
 
-
 if __name__ == '__main__':
     main()
-
