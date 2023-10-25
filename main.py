@@ -18,6 +18,7 @@ def decode(decode_str):                             # decodes password
     return password_str
 
 
+# encode function
 def encode(password):
     encoded_pass = ""
     for digit in password:
