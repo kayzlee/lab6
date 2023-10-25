@@ -1,5 +1,6 @@
 encode_loop = True
-def decode(decode_str):
+
+def decode(decode_str):                             # decodes password
     password_str = ''
     for i in decode_str:
         if i == '0':
@@ -16,12 +17,12 @@ def decode(decode_str):
     return password_str
 
 
-def encode():
+def encode():                                       # encodes function
     pass
 
 
 def main():
-    while encode_loop:
+    while encode_loop:                              # ensures menu keeps repeating
         print('Menu\n' +
               '-------------\n' +
               '1. Encode\n' +
